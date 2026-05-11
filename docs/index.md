@@ -14,9 +14,9 @@ title: Vue d'ensemble du projet
 
 !!! info "Informations générales"
     **Session**: Été 2026  
-    **Auteur(s)**: <!-- Nom de chaque membre (matricule)  -->  
+    **Auteur**: Mouhamed Ahmed Tidjani Diop (20290840)<!-- Nom de chaque membre (matricule)  -->  
     **Thème(s)**: <!-- Thèmes principaux abordés dans le projet  -->  
-    **Superviseur(s)**: <!-- Nom du superviseur (affiliation)  -->  
+    **Superviseur**: Louis-Edouard Lafontant<!-- Nom du superviseur (affiliation)  -->  
     **Collaborateur(s):** <!-- Nom de(s) collaborateur(s) et partenaire(s)` -->  
 
 ## Description du projet
