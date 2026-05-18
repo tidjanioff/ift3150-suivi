@@ -50,6 +50,14 @@ title: Vue d'ensemble du projet
 
 > Présentez les membres de l’équipe et le rôle principal de chacun dans le projet.
 
+Le projet est réalisé individuellement par **Mouhamed Ahmed Tidjani Diop**.
+
+<!-- ### Rôle principal
+- ...
+- ... -->
+
+Le projet est encadré par **Louis-Edouard Lafontant** et réalisé en collaboration avec **BPA**, qui agit comme partenaire externe pour la définition du besoin et la validation de la solution.
+
 ## Échéancier
 
 !!! info
