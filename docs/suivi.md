@@ -22,7 +22,7 @@ title: Suivi du projet
 ## Semaine 1 (4–10 mai)
 
 ### Objectifs de la période
-- Définir l’orientation du projet avec BPA
+- Définir l’orientation du projet 
 - Explorer les différents axes possibles du projet
 - Identifier une solution pertinente et réalisable
 
@@ -42,20 +42,32 @@ title: Suivi du projet
 ## Semaine 2 (11–17 mai)
 
 ### Objectifs de la période
-- Se familiariser avec les technologies du projet
-- Comprendre le développement de plugins Revit
-- Préparer l’environnement de développement
+- Monter en compétence sur les technologies requises pour le projet
+- Préparer un environnement de développement fonctionnel
+- Commencer l’exploration du développement Revit
 
 ### Travail réalisé
 
 !!! abstract "Avancement"
-    - [x] Installation et configuration de l’environnement de développement
-    - [x] Prise en main du langage C# et du framework .NET
-    <!-- - [x] Exploration de la documentation liée à l’API Revit -->
-    - [x] Réalisation du tutoriel Autodesk
-        - *My First Revit Plug-in Overview*
-    - [x] Compréhension de la structure et du fonctionnement de base d’un plugin Revit
+    - [x] Apprentissage des bases de **C#** et du framework **.NET**
+        - Suivi de cours et exercices pratiques (Code with Mosh)
+    - [x] Début d’exploration du développement desktop avec **WPF**
+        - Tutoriel Microsoft : *Tutorial: Create a WPF app with .NET*
+    - [x] Exploration initiale du développement de plugins Revit
+        - Lecture du tutoriel Autodesk : *My First Revit Plug-in Overview*
+    - [x] Identification des contraintes techniques liées à l’environnement de développement
+        - Incompatibilité initiale avec macOS (absence de support Revit / limitations pour le développement WPF)
+    - [x] Mise en place d’une solution alternative
+        - Réception d’un poste Windows fourni par le superviseur
 
+### Difficultés rencontrées
+
+!!! warning "Difficultés"
+    - L’environnement de développement n’a pas pu être pleinement configuré cette semaine
+        - Revit n’étant pas disponible sur macOS, le développement natif du plugin était bloqué
+        - Le poste Windows fourni utilise un compte standard sans privilèges administrateur
+        - Impossible d’installer Visual Studio, ce qui a empêché la réalisation complète des tutoriels et la pratique concrète
+    - Résolution prévue en début de semaine suivante après ajustement des accès
 
 ## Semaine X (y-z mois)
 

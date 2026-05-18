@@ -15,9 +15,9 @@ title: Vue d'ensemble du projet
 !!! info "Informations générales"
     **Session**: Été 2026  
     **Auteur**: Mouhamed Ahmed Tidjani Diop (20290840)<!-- Nom de chaque membre (matricule)  -->  
-    **Thème(s)**: <!-- Thèmes principaux abordés dans le projet  -->  
+    **Thèmes**: Génie Logiciel, Développement de plugin, Building Information Modeling<!-- Thèmes principaux abordés dans le projet  -->  
     **Superviseur**: Louis-Edouard Lafontant<!-- Nom du superviseur (affiliation)  -->  
-    **Collaborateur(s):** <!-- Nom de(s) collaborateur(s) et partenaire(s)` -->  
+    **Collaborateur:** BPA<!-- Nom de(s) collaborateur(s) et partenaire(s)` -->  
 
 ## Description du projet
 
