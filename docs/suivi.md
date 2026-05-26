@@ -69,6 +69,25 @@ title: Suivi du projet
         - Impossible d’installer Visual Studio, ce qui a empêché la réalisation complète des tutoriels et la pratique concrète
     - Résolution prévue en début de semaine suivante après ajustement des accès
 
+## Semaine 3 (18-24 mai)
+
+### Objectifs de la période
+- Finaliser la configuration de l’environnement de développement
+- Développer une première expérience pratique avec l’API Revit
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Résolution des problèmes de configuration de l’environnement de développement
+        - Obtention des accès nécessaires sur le poste Windows
+        - Installation et configuration des outils requis (i.e. **Visual Studio**)
+    - [x] Mise en place d’un environnement de développement pleinement fonctionnel pour le développement de plugin Revit
+    - [x] Réalisation du tutoriel Autodesk : *My First Revit Plug-in*
+        - Création d’un premier plugin fonctionnel en **C#**
+        - Compréhension de la structure d’un plugin Revit (**IExternalCommand**, transactions, interaction avec le document actif)
+        - Compilation, déploiement et exécution du plugin dans Revit
+
+
 ## Semaine X (y-z mois)
 
 ### Objectifs de la période
