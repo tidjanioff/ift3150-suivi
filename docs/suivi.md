@@ -88,11 +88,25 @@ title: Suivi du projet
         - Compilation, déploiement et exécution du plugin dans Revit
 
 
-## Semaine 4 (25-31 mai)
+
+## Semaine 4 (25–31 mai)
 
 ### Objectifs de la période
+- Se familiariser avec le code existant du plugin
+- Comprendre l’architecture de la première itération du projet
+- Analyser le fonctionnement du processus d’importation entre Ekahau et Revit
 
 ### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Prise en main de la base de code développée lors de la première itération du projet
+    - [x] Étude approfondie du mécanisme d’importation des données
+        - Analyse des classes responsables de l’importation
+        - Compréhension du rôle et du fonctionnement du fichier **Import.cs**
+        - Exploration des interactions entre les données Ekahau et les éléments créés dans Revit
+    - [x] Identification des principales composantes impliquées dans le processus d’import
+
+
 
 ## Semaine X (y-z mois)
 
