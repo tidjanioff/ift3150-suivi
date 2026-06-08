@@ -107,6 +107,25 @@ title: Suivi du projet
     - [x] Identification des principales composantes impliquées dans le processus d’import
 
 
+## Semaine 5 (1–7 juin)
+
+### Objectifs de la période
+- Clarifier les attentes du partenaire industriel
+- Mieux comprendre le contexte d’utilisation du plugin
+- Définir un plan de travail pour les prochaines semaines
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Rencontre avec l’équipe de BPA
+        - Présentation plus détaillée du contexte du projet
+        - Discussion sur les objectifs et les priorités de développement
+        - Clarification des attentes concernant l’amélioration du plugin
+    - [x] Définition d’un plan de travail préliminaire pour les prochaines phases du projet
+    - [x] Découverte de l’environnement de travail de BPA
+        - Visite des locaux
+        - Présentation des outils et méthodes de travail utilisés dans l’entreprise
+        - Identification des ressources disponibles pour le projet
 
 ## Semaine X (y-z mois)
 
