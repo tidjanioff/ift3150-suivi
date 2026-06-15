@@ -124,10 +124,37 @@ title: Suivi du projet
     - [x] Définition d’un plan de travail préliminaire pour les prochaines phases du projet
     - [x] Découverte de l’environnement de travail de BPA
         - Visite des locaux
-        - Présentation des outils et méthodes de travail utilisés dans l’entreprise
+        - Présentation des outils et méthodes de travail utilisés dans l’entreprise dans le cadre du projet
         - Identification des ressources disponibles pour le projet
 
-## Semaine X (y-z mois)
+
+## Semaine 6 (8–14 juin)
+
+### Objectifs de la période
+- Commencer à travailler dans les locaux de BPA une fois par semaine
+- Évaluer l’état actuel du plugin
+- Identifier les améliorations prioritaires à apporter
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Travail effectué dans les locaux de BPA sous la supervision de **Raymond Alex Lafontant** et **Ramzi Sidani**
+    - [x] Prise en main du logiciel **Ekahau** dans l’environnement de BPA
+        - Accès à une licence complète du logiciel disponible sur les postes de travail de l’entreprise
+        - Exploration de l’interface et des fonctionnalités pertinentes au projet
+        - Familiarisation avec la structure des projets et des données utilisées par le plugin
+    - [x] Audit de la version actuelle du plugin
+        - Analyse du fonctionnement général de la fonctionnalité d’exportation
+        - Évaluation de l’expérience utilisateur offerte par l’interface actuelle
+        - Identification des principaux points d’amélioration UI/UX
+    - [x] Début de la refonte de certains éléments de l’interface utilisateur
+    - [x] Début des travaux de correction de bogues
+        - Analyse des problèmes affectant la compatibilité avec les versions antérieures de Revit
+        - Intervention sur la version **.NET Framework 4.8** utilisée pour **Revit 2024 et versions antérieures**
+        - Identification de plusieurs comportements instables nécessitant des correctifs
+
+
+<!-- ## Semaine X (y-z mois)
 
 ### Objectifs de la période
 - Clarifier la problématique
@@ -161,4 +188,4 @@ title: Suivi du projet
     - Problème de configuration du plugin Mermaid
         - Confusion entre `mkdocs-mermaid2-plugin` (pip)
           et `mermaid2` (nom du plugin)
-        - Résolu après nettoyage et configuration correcte dans `mkdocs.yml`
+        - Résolu après nettoyage et configuration correcte dans `mkdocs.yml` -->
