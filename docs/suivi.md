@@ -153,6 +153,36 @@ title: Suivi du projet
         - Intervention sur la version **.NET Framework 4.8** utilisée pour **Revit 2024 et versions antérieures**
         - Identification de plusieurs comportements instables nécessitant des correctifs
 
+## Semaine 7 (15–21 juin)
+
+### Objectifs de la période
+
+* Tester la fonctionnalité d’exportation dans différents scénarios
+* Vérifier le bon fonctionnement du plugin sur les deux environnements ciblés
+* Corriger les bogues bloquant ou affectant l’export
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Réalisation de tests sur la fonctionnalité d’exportation du plugin
+        - Tests effectués sur différents scénarios d’utilisation
+        - Vérification du comportement de l’export selon la structure des plans Revit
+    - [x] Validation de l’export sur les deux versions du plugin
+        - Version compatible **Revit 2025** avec **.NET 8**
+        - Version compatible **Revit 2024 et versions antérieures** avec **.NET Framework 4.8**
+    - [x] Correction de bogues liés au processus d’exportation
+    - [x] Préparation des prochains tests
+        - Identification du besoin de plans Revit plus complexes pour mieux valider le comportement du plugin
+        - Demande faite à **Ramzi Sidani** afin d’obtenir des plans réels de BPA pour les prochaines phases de test
+
+### Difficultés rencontrées
+
+!!! warning "Difficultés"
+    - Les tests sur **Revit 2024** ont été limités par le manque de plans disponibles
+        - Un seul plan était disponible pour cette version
+        - Ce plan ne contenait qu’un seul niveau, ce qui n’a pas permis de tester l’exportation dans un scénario multi-niveaux
+    - Des plans plus complexes ont été demandés à BPA afin de poursuivre les tests de manière plus représentative la semaine suivante
+
 
 <!-- ## Semaine X (y-z mois)
 
