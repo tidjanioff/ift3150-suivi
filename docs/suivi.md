@@ -183,6 +183,67 @@ title: Suivi du projet
         - Ce plan ne contenait qu’un seul niveau, ce qui n’a pas permis de tester l’exportation dans un scénario multi-niveaux
     - Des plans plus complexes ont été demandés à BPA afin de poursuivre les tests de manière plus représentative la semaine suivante
 
+## Semaine 8 (22–28 juin)
+
+### Objectifs de la période
+
+* Poursuivre les tests de validation du plugin avec des plans réels fournis par BPA
+* Mettre l'accent sur les tests de la fonctionnalité d'import
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Réalisation de tests sur la fonctionnalité d’importation du plugin
+        - Tests effectués à partir des données Ekahau et des plans Revit disponibles
+        - Vérification du comportement de l’importation des points d’accès dans Revit
+        - Observation des interactions entre les données importées et les éléments du modèle Revit
+    - [x] Finalisation des tests d’exportation avec **Revit 2024**
+        - Utilisation de plans réels fournis par **BPA**
+        - Validation du comportement de l’exportation avec la version **.NET Framework 4.8**
+    - [x] Finalisation de la pile de tests **Import/Export** pour la version compatible **Revit 2024 et versions antérieures**
+        - Tests réalisés sur la version du plugin basée sur **.NET Framework 4.8**
+        - Validation du fonctionnement général selon les scénarios disponibles
+    - [x] Préparation des tests pour la version compatible **Revit 2025**
+        - Analyse du projet Revit 2025 fourni par BPA
+        - Identification d’un blocage empêchant la validation complète avec **.NET 8**
+
+### Difficultés rencontrées
+
+!!! warning "Difficultés"
+    - Les tests sur la version compatible **Revit 2025** avec **.NET 8** n’ont pas pu être complétés
+    - Le projet Revit 2025 fourni ne contenait aucun **floor plan**
+    - L’absence de plans exploitables empêchait de tester correctement les fonctionnalités d’importation et d’exportation
+    - La validation complète de la version **.NET 8** a donc été reportée à la semaine suivante
+
+## Semaine 9 (29 juin – 05 juillet)
+
+### Objectifs de la période
+
+* Terminer les tests d'import/export pour la version **.NET 8** avec les plans fournis par BPA
+* Déployer localement une première version beta du plugin
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Réalisation d’un premier déploiement local du plugin pour la version **.NET Framework 4.8**
+        - Déploiement effectué pour la version compatible **Revit 2024 et versions antérieures**
+        - Validation basée sur les tests d’importation et d’exportation réalisés avec les plans fournis par **BPA**
+    - [x] Poursuite des tests sur la version compatible **Revit 2025** avec **.NET 8**
+        - Analyse d’un projet Revit de **BPA** lié à un contexte d’aéroport
+        - Identification de problèmes empêchant un déploiement fiable de cette version
+    - [x] Début de l’investigation des problèmes spécifiques à la version **.NET 8**
+        - Analyse des comportements problématiques observés avec le projet fourni
+        - Report du déploiement de la version **Revit 2025 / .NET 8** jusqu’à correction des problèmes identifiés
+
+### Difficultés rencontrées
+
+!!! warning "Difficultés"
+    - Le déploiement local n’a pu être réalisé que pour la version **.NET Framework 4.8**
+    - Les tests effectués avec les plans fournis par **BPA** étaient concluants pour cette version
+    - La version **.NET 8** compatible **Revit 2025** présente encore des problèmes avec un projet réel de BPA
+    - Les difficultés observées empêchent un déploiement local fiable pour le moment
+    - Une analyse plus approfondie est nécessaire afin d’identifier précisément les causes et d’appliquer les correctifs requis
+
 
 <!-- ## Semaine X (y-z mois)
 
