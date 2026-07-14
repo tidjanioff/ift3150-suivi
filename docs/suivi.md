@@ -245,6 +245,46 @@ title: Suivi du projet
     - Une analyse plus approfondie est nécessaire afin d’identifier précisément les causes et d’appliquer les correctifs requis
 
 
+## Semaine 10 (6–12 juillet)
+
+### Objectifs de la période
+
+* Valider l’ensemble du flux d’utilisation du plugin sur Revit 2024
+* Préparer une version facilement installable et testable par les utilisateurs
+* Poursuivre l’analyse des problèmes rencontrés avec Revit 2025
+* Préparer une refactorisation majeure de la fonctionnalité d’exportation
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Réalisation de tests de bout en bout sur la version compatible Revit 2024 et versions antérieures
+        - Validation du flux complet Revit → Ekahau → Revit
+        - Exportation d’un projet Revit vers Ekahau
+        - Modification du projet dans Ekahau, notamment par le placement de points d’accès
+        - Réimportation des données Ekahau dans Revit
+        - Confirmation du bon fonctionnement général des fonctionnalités d’importation et d’exportation avec .NET Framework 4.8
+    - [x] Préparation d’un dossier d’installation téléchargeable pour la version Revit 2024
+        - Regroupement des fichiers nécessaires au fonctionnement du plugin
+        - Organisation des ressources et des fichiers de configuration requis
+    - [x] Poursuite de l’analyse des problèmes rencontrés avec Revit 2025 / .NET 8
+        - Constat que les problèmes observés ne semblent pas directement liés à une incompatibilité technique évidente avec Revit 2025
+        - Identification du projet d’aéroport YUL utilisé pour les tests comme cause potentielle des comportements problématiques
+        - Demande d’un autre projet Revit 2025 à BPA afin de déterminer si le problème provient du plugin ou des particularités du modèle testé
+    - [x] Début de la conception d’une refactorisation majeure de la fonctionnalité d’exportation
+        - Analyse des dépendances actuelles entre le plugin et le format de projet Ekahau
+        - Définition sur papier d’une nouvelle architecture avant modification de la base de code
+        - Objectif de rendre le processus d’exportation indépendant d’Ekahau
+        - Préparation d’une séparation plus claire entre l’extraction des données Revit et leur transformation vers un format exploitable par des outils externes
+
+### Difficultés rencontrées
+
+!!! warning "Difficultés"
+    - La validation de la version compatible Revit 2025 / .NET 8 demeure incomplète
+    - Les problèmes observés apparaissent principalement avec le projet d’aéroport YUL fourni par BPA
+    - L’origine exacte du problème n’a pas encore pu être déterminée
+    - Des tests avec un autre projet Revit 2025 sont nécessaires afin d’isoler la source du problème
+
+
 <!-- ## Semaine X (y-z mois)
 
 ### Objectifs de la période
