@@ -856,6 +856,56 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#semaine-10-612-juillet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semaine 10 (6–12 juillet)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semaine 10 (6–12 juillet)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectifs-de-la-periode_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectifs de la période
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travail-realise_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travail réalisé
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difficultes-rencontrees_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Difficultés rencontrées
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1366,6 +1416,56 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#semaine-10-612-juillet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semaine 10 (6–12 juillet)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semaine 10 (6–12 juillet)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectifs-de-la-periode_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectifs de la période
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travail-realise_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travail réalisé
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difficultes-rencontrees_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Difficultés rencontrées
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1697,6 +1797,56 @@ N'oubliez pas d’effacer ou de mettre en commentaires les notes (<code>&gt;</co
 <li>La version <strong>.NET 8</strong> compatible <strong>Revit 2025</strong> présente encore des problèmes avec un projet réel de BPA</li>
 <li>Les difficultés observées empêchent un déploiement local fiable pour le moment</li>
 <li>Une analyse plus approfondie est nécessaire afin d’identifier précisément les causes et d’appliquer les correctifs requis</li>
+</ul>
+</div>
+<h2 id="semaine-10-612-juillet">Semaine 10 (6–12 juillet)<a class="headerlink" href="#semaine-10-612-juillet" title="Permanent link">&para;</a></h2>
+<h3 id="objectifs-de-la-periode_9">Objectifs de la période<a class="headerlink" href="#objectifs-de-la-periode_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Valider l’ensemble du flux d’utilisation du plugin sur Revit 2024</li>
+<li>Préparer une version facilement installable et testable par les utilisateurs</li>
+<li>Poursuivre l’analyse des problèmes rencontrés avec Revit 2025</li>
+<li>Préparer une refactorisation majeure de la fonctionnalité d’exportation</li>
+</ul>
+<h3 id="travail-realise_9">Travail réalisé<a class="headerlink" href="#travail-realise_9" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Avancement</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Réalisation de tests de bout en bout sur la version compatible Revit 2024 et versions antérieures<ul>
+<li>Validation du flux complet Revit → Ekahau → Revit</li>
+<li>Exportation d’un projet Revit vers Ekahau</li>
+<li>Modification du projet dans Ekahau, notamment par le placement de points d’accès</li>
+<li>Réimportation des données Ekahau dans Revit</li>
+<li>Confirmation du bon fonctionnement général des fonctionnalités d’importation et d’exportation avec .NET Framework 4.8</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Préparation d’un dossier d’installation téléchargeable pour la version Revit 2024<ul>
+<li>Regroupement des fichiers nécessaires au fonctionnement du plugin</li>
+<li>Organisation des ressources et des fichiers de configuration requis</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Poursuite de l’analyse des problèmes rencontrés avec Revit 2025 / .NET 8<ul>
+<li>Constat que les problèmes observés ne semblent pas directement liés à une incompatibilité technique évidente avec Revit 2025</li>
+<li>Identification du projet d’aéroport YUL utilisé pour les tests comme cause potentielle des comportements problématiques</li>
+<li>Demande d’un autre projet Revit 2025 à BPA afin de déterminer si le problème provient du plugin ou des particularités du modèle testé</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Début de la conception d’une refactorisation majeure de la fonctionnalité d’exportation<ul>
+<li>Analyse des dépendances actuelles entre le plugin et le format de projet Ekahau</li>
+<li>Définition sur papier d’une nouvelle architecture avant modification de la base de code</li>
+<li>Objectif de rendre le processus d’exportation indépendant d’Ekahau</li>
+<li>Préparation d’une séparation plus claire entre l’extraction des données Revit et leur transformation vers un format exploitable par des outils externes</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="difficultes-rencontrees_4">Difficultés rencontrées<a class="headerlink" href="#difficultes-rencontrees_4" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Difficultés</p>
+<ul>
+<li>La validation de la version compatible Revit 2025 / .NET 8 demeure incomplète</li>
+<li>Les problèmes observés apparaissent principalement avec le projet d’aéroport YUL fourni par BPA</li>
+<li>L’origine exacte du problème n’a pas encore pu être déterminée</li>
+<li>Des tests avec un autre projet Revit 2025 sont nécessaires afin d’isoler la source du problème</li>
 </ul>
 </div>
 <!-- ## Semaine X (y-z mois)
