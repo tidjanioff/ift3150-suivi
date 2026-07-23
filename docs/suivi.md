@@ -284,6 +284,38 @@ title: Suivi du projet
     - L’origine exacte du problème n’a pas encore pu être déterminée
     - Des tests avec un autre projet Revit 2025 sont nécessaires afin d’isoler la source du problème
 
+## Semaine 11 (13–19 juillet)
+
+### Objectifs de la période
+
+* Finaliser la conception de la nouvelle architecture de la fonctionnalité d’exportation
+* Commencer l’implémentation de la refactorisation
+* Tester la version Revit 2025 / .NET 8 avec de nouveaux plans fournis par BPA
+* Déterminer si les problèmes observés proviennent des modèles testés ou du plugin
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Finalisation de la conception de la nouvelle architecture de la fonctionnalité d’exportation
+        - Précision des responsabilités des différentes composantes
+        - Définition d’une séparation plus claire entre l’extraction des données Revit et leur transformation vers des formats externes
+        - Préparation d’une architecture visant à réduire la dépendance directe envers Ekahau
+    - [x] Début de l’implémentation de la nouvelle architecture
+        - Création des premières composantes issues de la conception
+        - Début de l’adaptation du code existant à la nouvelle structure
+        - Progression graduelle afin de préserver le fonctionnement actuel pendant la refactorisation
+    - [x] Réalisation de tests avec de nouveaux plans Revit 2025 fournis par BPA
+        - Vérification du comportement de la version basée sur **.NET 8**
+        - Reproduction de problèmes similaires à ceux observés avec le projet d’aéroport YUL
+        - Confirmation que les difficultés ne sont pas propres à un seul modèle Revit
+
+### Difficultés rencontrées
+
+!!! warning "Difficultés"
+    - Des problèmes persistent avec la version compatible **Revit 2025 / .NET 8**, malgré l’utilisation de nouveaux plans
+    - Les nouveaux tests indiquent que la source du problème se situe vraisemblablement dans le plugin plutôt que dans les particularités des modèles fournis
+    - Une investigation plus approfondie du processus d’exportation est nécessaire
+    - Les prochaines étapes consisteront à isoler les causes des comportements observés et à corriger les bogues afin de stabiliser cette version
 
 <!-- ## Semaine X (y-z mois)
 
