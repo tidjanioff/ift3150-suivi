@@ -12,12 +12,11 @@ title: Suivi du projet
 
 # Suivi de projet
 
-> :bulb: Cette page documente l’évolution du projet dans le temps.
+<!-- > :bulb: Cette page documente l’évolution du projet dans le temps.
 > Elle sert à rendre visibles les décisions, ajustements et apprentissages.
 > Les entrées peuvent être hebdomadaires ou bi-hebdomadaires.  
-> N'oubliez pas d’effacer ou de mettre en commentaires les notes (`>`) avant la remise finale.
+> N'oubliez pas d’effacer ou de mettre en commentaires les notes (`>`) avant la remise finale. -->
 
----
 
 ## Semaine 1 (4–10 mai)
 
@@ -317,38 +316,84 @@ title: Suivi du projet
     - Une investigation plus approfondie du processus d’exportation est nécessaire
     - Les prochaines étapes consisteront à isoler les causes des comportements observés et à corriger les bogues afin de stabiliser cette version
 
-<!-- ## Semaine X (y-z mois)
+
+## Semaine 12 (20–26 juillet)
 
 ### Objectifs de la période
-- Clarifier la problématique
-- Explorer les solutions existantes
-- Produire un premier prototype conceptuel
+
+* Poursuivre l’implémentation de la nouvelle architecture de la fonctionnalité d’exportation
+* Intégrer le patron de conception Visitor dans les deux versions du plugin
+* Améliorer l’organisation du code afin de faciliter sa maintenance
+* Mettre à disposition les deux versions du plugin pour les tests internes chez BPA
 
 ### Travail réalisé
 
 !!! abstract "Avancement"
-    - [x] Analyse de solutions existantes
-        - Comparaison de trois outils similaires
-    - [x] Prototype basse fidélité (Figma)
-    - [ ] Validation utilisateur
-        - Reportée à la semaine suivante
+    - [x] Implémentation du patron de conception **Visitor** pour la fonctionnalité d’exportation
+        - Intégration complète dans la version **.NET Framework 4.8**
+        - Adaptation et intégration de la même architecture dans la version **.NET 8**
+        - Poursuite de la séparation entre les éléments extraits de Revit et leur transformation vers des formats externes
+    - [x] Réorganisation des composantes liées à la nouvelle architecture dans la version **.NET Framework 4.8**
+        - Séparation des interfaces et des classes concrètes dans différents fichiers
+        - Amélioration de la lisibilité et de la structure générale du code
+        - Préparation d’une base plus modulaire et plus facile à faire évoluer
+    - [x] Harmonisation de l’architecture entre les deux versions du plugin
+        - Application de la même approche de refactorisation aux versions **.NET Framework 4.8** et **.NET 8**
+        - Réduction progressive du couplage entre la logique d’exportation et le format Ekahau
+    - [x] Mise à disposition des deux versions du plugin sur le SharePoint de **BPA**
+        - Dépôt de la version **.NET Framework 4.8** compatible avec Revit 2024 et versions antérieures
+        - Dépôt de la version **.NET 8** compatible avec Revit 2025
+        - Centralisation des fichiers nécessaires afin de faciliter l’installation et les tests par l’équipe de BPA
 
-### Décisions et ajustements
 
-> À compléter uniquement si des choix structurants ont été faits
-> ou si l’orientation du projet a évolué.
+## Semaine 13 (27 juillet – 2 août)
 
-!!! info "Décisions"
-    - Abandon de l’approche X jugée trop complexe
-    - Reformulation de la problématique suite aux premières analyses
+### Objectifs de la période
 
-### Difficultés rencontrées
+* Poursuivre la stabilisation de la fonctionnalité d’exportation
+* Corriger les problèmes d’alignement observés entre les murs exportés et l’image du plan
+* Valider le correctif sur les deux versions du plugin
+* Présenter le projet dans le cadre de la foire de projets IFT3150
 
-> À compléter uniquement si des obstacles ont eu un impact réel
-> sur l’avancement du projet.
+### Travail réalisé
 
-!!! warning "Difficultés"
-    - Problème de configuration du plugin Mermaid
-        - Confusion entre `mkdocs-mermaid2-plugin` (pip)
-          et `mermaid2` (nom du plugin)
-        - Résolu après nettoyage et configuration correcte dans `mkdocs.yml` -->
+!!! abstract "Avancement"
+    - [x] Correction d’un problème d’alignement entre les murs exportés et l’image du plan
+        - Identification d’une incompatibilité liée aux dimensions du fichier **BMP**
+        - Correction de l’utilisation des coordonnées associées à la **crop box** de Revit
+        - Ajustement du processus d’exportation afin que les murs et l’image générée utilisent le même espace de coordonnées
+    - [x] Application et validation du correctif sur les deux versions du plugin
+        - Version **.NET Framework 4.8** compatible avec Revit 2024 et versions antérieures
+        - Version **.NET 8** compatible avec Revit 2025
+    - [x] Présentation du projet à la foire de projets du cours **IFT3150**
+        - Présentation du projet réalisé en collaboration avec **BPA**
+        - Échanges avec les visiteurs autour du fonctionnement et des objectifs du plugin
+
+<!-- ## Semaine 14 (3–9 août)
+
+### Objectifs de la période
+
+* Finaliser les derniers ajustements UI/UX du plugin
+* Améliorer la qualité et la maintenabilité du code avant la fin du projet
+* Harmoniser la structure et le nommage entre les deux versions du plugin
+* Réduire certaines dépendances et responsabilités multiples encore présentes dans le code
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Finalisation de plusieurs ajustements **UI/UX**
+        - Amélioration de certains éléments de l’interface afin de rendre l’utilisation du plugin plus claire et plus cohérente
+        - Ajustement des interactions et des retours utilisateur dans les principaux flux du plugin
+    - [x] Renommage du projet **.NET Framework 4.8**
+        - Remplacement de l’ancien nom **Create** par **Rekat**
+        - Harmonisation du nom du projet avec la version **.NET 8** et avec l’identité actuelle du plugin
+    - [x] Application du **Single Responsibility Principle (SRP)** à plusieurs méthodes
+        - Refactorisation des méthodes suivant le modèle `ActionAndGenerateJson`
+        - Séparation des responsabilités afin d’éviter qu’une même méthode effectue plusieurs tâches distinctes
+        - Amélioration de la lisibilité, de la testabilité et de la maintenabilité du code
+    - [x] Découplage de la logique de séparation des murs par rapport à la langue
+        - Réduction de la dépendance à des chaînes de caractères ou comportements spécifiques à la langue utilisée dans Revit
+    - [x] Nettoyage final de la base de code
+        - Suppression ou simplification de portions de code devenues inutiles
+        - Amélioration de l’organisation générale du projet
+        - Préparation d’une base de code plus facile à comprendre et à maintenir par de futurs développeurs -->

@@ -27,7 +27,7 @@ title: Vue d'ensemble du projet
 
 <!-- > Présentez le contexte général dans lequel s’inscrit votre projet (social, organisationnel, technologique, éducatif, environnemental, etc.). -->
 
-Le secteur de l’architecture, de l’ingénierie et de la construction **(AEC)** utilise de plus en plus les technologies de modélisation des informations du bâtiment **(BIM)** afin de concevoir et gérer des modèles numériques de bâtiments. Parmi les logiciels les plus utilisés dans ce domaine, **Autodesk Revit** permet la conception architecturale et la gestion des données du bâtiment, tandis qu’**Ekahau** est utilisé pour la simulation et l’optimisation des réseaux Wi-Fi à l’intérieur des infrastructures.
+Le secteur de l’architecture, de l’ingénierie et de la construction **(AEC)** utilise de plus en plus les technologies de modélisation des informations du bâtiment **(BIM)** afin de concevoir et gérer des modèles numériques de bâtiments. Parmi les logiciels les plus utilisés dans ce domaine, **Autodesk Revit** permet la conception architecturale et la gestion des données du bâtiment, tandis qu’**Ekahau AI Pro** est utilisé pour la simulation et l’optimisation des réseaux Wi-Fi à l’intérieur des infrastructures.
 
 Ces deux outils sont complémentaires, mais les échanges de données entre **Revit** et **Ekahau** demeurent limités et nécessitent encore plusieurs manipulations manuelles. Cette situation augmente les risques d’erreurs et réduit l’efficacité du flux de travail, particulièrement dans des projets BIM complexes.
 
@@ -48,33 +48,52 @@ Ces problèmes deviennent particulièrement importants dans des modèles complex
 > Présentez votre proposition de projet et les objectifs visés. Expliquez en quoi votre approche répond à la problématique identifiée. 
 > Assurez-vous d'avoir, dans la mesure du possible, des objectifs mesurables, raisonnnables dans le temps et non redondants entre eux. -->
 
-Le projet consiste à améliorer le plugin développé pour l’intégration entre Revit et **Ekahau**, en mettant principalement l’accent sur la robustesse et la fiabilité des échanges de données entre les deux logiciels. Bien que la partie exportation de Revit vers **Ekahau** soit déjà largement fonctionnelle, plusieurs défis demeurent présents, notamment en raison de l’absence d’API officielle fournie par **Ekahau**.
 
-Cette absence d’API oblige le plugin à générer directement les fichiers internes utilisés par **Ekahau**, ce qui crée des risques d’incompatibilité lorsque la structure interne du logiciel évolue selon les versions. Le projet vise donc à mettre en place des mécanismes de vérification et de validation de la structure des fichiers **Ekahau** avant la génération des données, afin d’améliorer la compatibilité et la stabilité du plugin.
+Le projet consiste à poursuivre l’amélioration du plugin développé pour faciliter les échanges de données entre **Autodesk Revit** et **Ekahau AI Pro**, en mettant l’accent sur sa robustesse, sa fiabilité et sa maintenabilité dans un contexte d’utilisation réel.
 
-Le projet mettra également davantage l’accent sur la fonctionnalité d’importation depuis **Ekahau** vers Revit, qui demeure moins avancée que la partie exportation. L’objectif est d’assurer une importation plus fiable et plus cohérente des artéfacts et des informations provenant des simulations réalisées dans **Ekahau**.
+Le travail porte notamment sur la stabilisation des fonctionnalités d’importation et d’exportation existantes, la correction des problèmes observés sur différents modèles BIM ainsi que la prise en charge des environnements ciblés : **Revit 2024 et versions antérieures avec .NET Framework 4.8**, et **Revit 2025 et versions postérieures avec .NET 8.0**.
 
-L’objectif final est donc de rendre l’intégration entre **Revit** et **Ekahau** plus stable et plus fiable.
+Une attention particulière sera également portée à l’architecture de la fonctionnalité d’exportation. La première version du plugin étant fortement couplée au format utilisé par **Ekahau**, le projet prévoit une refactorisation visant à mieux séparer l’extraction des données provenant de **Revit** de leur transformation vers un format externe. Cette évolution devra permettre de rendre le code plus modulaire et de réduire la dépendance directe de la logique métier envers **Ekahau**.
+
+Le projet comprend également l’amélioration de l’expérience utilisateur, la préparation de versions facilement installables et testables par **BPA**, ainsi que le nettoyage de la base de code afin de faciliter sa maintenance et son évolution future.
+
+L’objectif final est de disposer d’un plugin plus stable, plus cohérent et plus facilement maintenable pour les échanges entre **Revit** et les flux de planification Wi-Fi réalisés avec **Ekahau AI Pro**.
 
 ### Méthodologie
 
 <!-- > Expliquez comment vous comptez aborder le projet : démarche générale, grandes étapes prévues, itérations, types de validations envisagées. -->
 
-Le projet sera réalisé de manière itérative en s’appuyant sur la première version du plugin développée à l’été 2025. Une première étape consistera à analyser l’architecture existante ainsi que les mécanismes actuels d’importation et d’exportation entre **Revit** et **Ekahau** afin d’identifier les principales sources d’erreurs et d’incompatibilités.
+Le projet sera réalisé selon une approche **itérative**, en s’appuyant sur la première version du plugin développée à l’été 2025. Les premières étapes consisteront à prendre en main la base de code existante, à comprendre les mécanismes d’importation et d’exportation et à identifier les principales limitations techniques du plugin.
 
-Par la suite, une étude de la structure interne des fichiers **Ekahau** sera effectuée pour vérifier les variations possibles selon les versions du logiciel. Cette étape permettra de mettre en place des mécanismes de validation avant la génération ou l’importation des données afin de réduire les risques d’incompatibilité.
+Le développement sera ensuite effectué par cycles successifs de **test, analyse, correction et validation**. Les fonctionnalités seront testées à partir de modèles Revit fournis par **BPA**, ce qui permettra de reproduire des scénarios d’utilisation représentatifs et d’identifier les comportements problématiques sur des projets réels.
 
-Le développement portera principalement sur l’amélioration de la robustesse du traitement des données ainsi que sur la fonctionnalité d’importation depuis **Ekahau** vers **Revit**. Les différentes fonctionnalités seront développées progressivement et intégrées au plugin existant afin de valider leur comportement dans des scénarios réels d’utilisation.
+Le plugin devant être maintenu pour deux environnements différents, les modifications seront validées sur les versions **.NET 4.8** et **.NET 8.0** lorsque cela sera applicable.
+
+En parallèle des corrections fonctionnelles, une refactorisation progressive de l’architecture sera réalisée afin d’améliorer la séparation des responsabilités et de réduire le couplage entre la logique d’extraction des données Revit et leur transformation vers le format attendu par les outils externes. Cette refactorisation s’appuiera notamment sur le patron de conception **Visitor** et sur l’application de principes de conception tels que le **Single Responsibility Principle (SRP)**.
+
+Enfin, des améliorations UI/UX, du nettoyage de code et des ajustements liés au déploiement seront réalisés progressivement afin d’obtenir une version plus stable et plus facilement maintenable par de futurs développeurs.
 
 ### Validation et Évaluation
 
 <!-- > Indiquez comment vous évaluerez que votre solution répond aux objectifs du projet (ex. scénarios d’usage, tests, retours utilisateurs, indicateurs qualitatifs ou quantitatifs). -->
 
-L’évaluation du projet reposera principalement sur la stabilité et la fiabilité des échanges de données entre **Revit** et **Ekahau**. Des tests seront réalisés afin de vérifier que les fichiers générés ou importés demeurent compatibles avec différentes structures de projets **Ekahau** et différentes versions du logiciel.
 
-Des tests unitaires et des tests d’intégration seront également effectués sur les principales fonctionnalités du plugin, particulièrement celles liées à l’importation des données depuis **Ekahau** vers **Revit**. Ces tests permettront de vérifier la cohérence des données importées, le bon positionnement des artéfacts dans le modèle BIM ainsi que la réduction des erreurs de traitement.
+La validation du projet reposera principalement sur des **tests fonctionnels** et des **tests de bout en bout** réalisés sur les différentes versions du plugin.
 
-Finalement, des validations seront réalisées sur des modèles BIM de différentes tailles et complexités afin d’évaluer le comportement du plugin dans des scénarios d’utilisation réels grâce à la collaboration avec **BPA** qui fournira l'environnement et les modèles de test nécessaires.
+Les fonctionnalités d’importation et d’exportation seront testées à partir de modèles BIM fournis par **BPA**, comprenant différents niveaux et différentes configurations architecturales. Ces essais permettront de vérifier notamment la cohérence des données exportées, le positionnement des éléments, l’alignement des murs avec les plans générés ainsi que le comportement général du plugin dans des scénarios représentatifs de son utilisation réelle.
+
+Des tests de bout en bout seront également réalisés sur le flux complet :
+
+**Revit → Ekahau → Revit**
+
+Ils permettront de vérifier qu’un modèle peut être exporté depuis Revit, utilisé et modifié dans Ekahau, puis réimporté correctement dans Revit.
+
+La validation sera effectuée sur les deux environnements ciblés :
+
+- **Revit 2024 et versions antérieures** avec **.NET 4.8** ;
+- **Revit 2025 et versions postérieures** avec **.NET 8.0**.
+
+La collaboration avec **BPA** permettra enfin de tester le plugin dans son environnement d’utilisation prévu et avec des modèles issus de projets réels.
 
 
 ## Équipe
@@ -84,16 +103,23 @@ Finalement, des validations seront réalisées sur des modèles BIM de différen
 Le projet est réalisé individuellement par **Mouhamed Ahmed Tidjani Diop**, qui est responsable de l’ensemble des activités du projet.
 
 
-Les travaux sont encadrés par **Louis-Edouard Lafontant** et réalisé en collaboration avec **BPA**, qui agit comme partenaire externe pour la définition du besoin et la validation de la solution.
+Le projet est principalement encadré par **Louis-Edouard Lafontant** à l’**Université de Montréal**. Il est également réalisé en collaboration avec **BPA**, où **Raymond Alex Lafontant** et **Ramzi Sidani** apportent un encadrement complémentaire lié aux besoins métier, au contexte d’utilisation et à la validation de la solution.
+
+Le support technique lié aux modèles **BIM** et aux usages de Revit est assuré par **Elisabeth Félix**, modélisatrice chez **BPA**.
 
 ## Échéancier
 
 !!! info
     Le suivi complet est disponible dans la page [Suivi de projet](suivi.md).
 
-| Activités                                              | Début  | Fin     | Livrable                                      | Statut         |
-|--------------------------------------------------------|--------|---------|------------------------------------------------|----------------|
-| Définition du projet et analyse préliminaire           | 4 mai  | 17 mai  | Proposition de projet et analyse du besoin    | ✅ Terminé     |
-| Formation et mise en place de l’environnement          | 11 mai | 24 mai  | Environnement de développement fonctionnel    | ✅ Terminé     |
-| Étude de l’architecture du plugin existant             | 25 mai | 7 juin  | Analyse technique du plugin actuel            | 🔄 En cours    |
+| Activités                                              | Début       | Fin         | Livrable / résultat principal                              | Statut       |
+| ------------------------------------------------------ | ----------- | ----------- | ---------------------------------------------------------- | ------------ |
+| Définition du projet et analyse préliminaire           | 4 mai       | 17 mai      | Orientation du projet et définition des objectifs          | ✅ Terminé   |
+| Formation et mise en place de l’environnement          | 11 mai      | 24 mai      | Environnement de développement Revit fonctionnel           | ✅ Terminé   |
+| Analyse du plugin existant et clarification des besoins| 25 mai      | 14 juin     | Analyse technique et identification des améliorations      | ✅ Terminé   |
+| Amélioration et validation des fonctionnalités         | 8 juin      | 12 juillet  | Corrections, tests import/export et validation E2E          | ✅ Terminé   |
+| Préparation et mise à disposition des versions beta    | 29 juin     | 26 juillet  | Versions .NET Framework 4.8 et .NET 8 disponibles chez BPA | ✅ Terminé   |
+| Refactorisation de l’architecture d’exportation        | 6 juillet   | 26 juillet  | Nouvelle architecture basée notamment sur le patron Visitor| ✅ Terminé   |
+| Stabilisation des deux versions du plugin              | 13 juillet  | 2 août      | Correction des problèmes d’exportation et d’alignement     | ✅ Terminé   |
+| Finalisation, nettoyage et amélioration de l’UI/UX     | 3 août      | 9 août      | Version finale du plugin et base de code maintenable       | 🔄 En cours  |
 
