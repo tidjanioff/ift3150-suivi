@@ -35,10 +35,10 @@ theme:
     text: Roboto
     code: Roboto Mono
     
-copyright: "&copy; 2026 <b>DIRO</b> &ndash; IFT3150: Amélioration d'un plug-in Autodesk Revit <br>Département d'informatique et de recherche opérationnelle <br>Université de Montréal"
+copyright: "&copy; 2026 <b>DIRO</b> &ndash; IFT3150・Amélioration d'un plug-in Autodesk Revit <br>Département d'informatique et de recherche opérationnelle <br>Université de Montréal"
 
-repo_name: ift3150-template
-repo_url: https://github.com/udem-diro/template-projet
+repo_name: ift3150-suivi
+repo_url: https://github.com/tidjanioff/ift3150-suivi
 # edit_uri: edit/main/docs/
 
 # extra:
