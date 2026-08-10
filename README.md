@@ -17,6 +17,8 @@ Le site regroupe notamment :
 - les principales difficultés rencontrées et décisions prises ;
 - les tests et la validation du plug-in ;
 - les résultats et le bilan du projet.
+
+
 ## Technologies
  
 Le site de suivi utilise principalement :
@@ -25,6 +27,7 @@ Le site de suivi utilise principalement :
 - **Material for MkDocs**
 - **Markdown**
 - **GitHub Pages**
+
 Le projet documenté repose notamment sur :
  
 - **C# / .NET**
