@@ -121,5 +121,5 @@ Le support technique lié aux modèles **BIM** et aux usages de Revit est assur�
 | Préparation et mise à disposition des versions beta    | 29 juin     | 26 juillet  | Versions .NET Framework 4.8 et .NET 8 disponibles chez BPA | ✅ Terminé   |
 | Refactorisation de l’architecture d’exportation        | 6 juillet   | 26 juillet  | Nouvelle architecture basée notamment sur le patron Visitor| ✅ Terminé   |
 | Stabilisation des deux versions du plugin              | 13 juillet  | 2 août      | Correction des problèmes d’exportation et d’alignement     | ✅ Terminé   |
-| Finalisation, nettoyage et amélioration de l’UI/UX     | 3 août      | 9 août      | Version finale du plugin et base de code maintenable       | 🔄 En cours  |
+| Finalisation du plugin, du rapport et du site de suivi | 3 août | 9 août | Version finale du plugin, rapport finalisé et site de suivi complété | ✅ Terminé |
 

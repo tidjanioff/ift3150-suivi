@@ -369,14 +369,13 @@ title: Suivi du projet
         - Présentation du projet réalisé en collaboration avec **BPA**
         - Échanges avec les visiteurs autour du fonctionnement et des objectifs du plugin
 
-<!-- ## Semaine 14 (3–9 août)
+## Semaine 14 (3–9 août)
 
 ### Objectifs de la période
 
-* Finaliser les derniers ajustements UI/UX du plugin
-* Améliorer la qualité et la maintenabilité du code avant la fin du projet
-* Harmoniser la structure et le nommage entre les deux versions du plugin
-* Réduire certaines dépendances et responsabilités multiples encore présentes dans le code
+- Finaliser les derniers ajustements UI/UX du plugin
+- Finaliser le rapport de projet
+- Compléter le site de suivi du projet
 
 ### Travail réalisé
 
@@ -384,16 +383,5 @@ title: Suivi du projet
     - [x] Finalisation de plusieurs ajustements **UI/UX**
         - Amélioration de certains éléments de l’interface afin de rendre l’utilisation du plugin plus claire et plus cohérente
         - Ajustement des interactions et des retours utilisateur dans les principaux flux du plugin
-    - [x] Renommage du projet **.NET Framework 4.8**
-        - Remplacement de l’ancien nom **Create** par **Rekat**
-        - Harmonisation du nom du projet avec la version **.NET 8** et avec l’identité actuelle du plugin
-    - [x] Application du **Single Responsibility Principle (SRP)** à plusieurs méthodes
-        - Refactorisation des méthodes suivant le modèle `ActionAndGenerateJson`
-        - Séparation des responsabilités afin d’éviter qu’une même méthode effectue plusieurs tâches distinctes
-        - Amélioration de la lisibilité, de la testabilité et de la maintenabilité du code
-    - [x] Découplage de la logique de séparation des murs par rapport à la langue
-        - Réduction de la dépendance à des chaînes de caractères ou comportements spécifiques à la langue utilisée dans Revit
-    - [x] Nettoyage final de la base de code
-        - Suppression ou simplification de portions de code devenues inutiles
-        - Amélioration de l’organisation générale du projet
-        - Préparation d’une base de code plus facile à comprendre et à maintenir par de futurs développeurs -->
+    - [x] Finalisation du **rapport de projet**
+    - [x] Complétion et mise à jour du **site de suivi du projet**

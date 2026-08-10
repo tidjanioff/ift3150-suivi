@@ -70,7 +70,7 @@ Plusieurs ajustements ont été apportés à l’interface du plugin afin de ren
 
 Ces améliorations concernent notamment l’organisation des commandes dans Revit, les interfaces d’importation et d’exportation ainsi que les retours fournis à l’utilisateur lors de l’exécution des différentes opérations.
 
-![Interface du plugin Rekat dans Revit](assets/images/...)
+![Interface du plugin Rekat dans Revit](assets/ui_ux_improvements.png)
 
 
 
