@@ -1,99 +1,93 @@
-# Template de site web pour IFT3150 (Projet informatique)
-
-Ce répertoire contient un template de site web de projet pour le cours IFT3150, construit avec [MkDocs](https://www.mkdocs.org/) et le thème [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
-
-Ce site sert à :
-
-- documenter le projet tout au long de la session,
-- structurer les livrables (description, suivi, résumé, rapport),
-- centraliser le travail de l’équipe dans un format clair et accessible.
-
-## Prérequis
-
-Assurez-vous d’avoir les outils suivants installés :
-
+# Site de suivi — Projet IFT3150
+ 
+Ce dépôt contient le **site de suivi du projet réalisé dans le cadre du cours IFT3150 – Projet informatique** à l'Université de Montréal.
+ 
+Le projet porte sur l'amélioration d'un **plug-in Autodesk Revit** destiné à faciliter et fiabiliser les échanges de données entre des modèles BIM dans **Autodesk Revit** et des projets de planification Wi-Fi dans **Ekahau AI Pro**.
+ 
+Le site est construit avec [MkDocs](https://www.mkdocs.org/) et le thème [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+ 
+## Contenu du site
+ 
+Le site regroupe notamment :
+ 
+- la présentation et le contexte du projet ;
+- les objectifs et besoins identifiés ;
+- le suivi hebdomadaire du travail réalisé ;
+- la conception et la réalisation technique ;
+- les principales difficultés rencontrées et décisions prises ;
+- les tests et la validation du plug-in ;
+- les résultats et le bilan du projet.
+## Technologies
+ 
+Le site de suivi utilise principalement :
+ 
+- **MkDocs**
+- **Material for MkDocs**
+- **Markdown**
+- **GitHub Pages**
+Le projet documenté repose notamment sur :
+ 
+- **C# / .NET**
+- **Autodesk Revit API**
+- **WPF / XAML**
+- **Ekahau AI Pro**
+## Utilisation locale
+ 
+### Prérequis
+ 
 - Python **3.11** ou plus récent
-- `pip` (gestionnaire de paquets Python)
-
-## Installation
-
-1. Clonez ce dépôt (optionnel) :
-```bash
-git clone git@github.com:udem-diro/template-projet.git
-```
-
-2. Installez les dépendances (dans votre répertoire) :
+- `pip`
+### Installation
+ 
+Installez les dépendances :
+ 
 ```bash
 pip install -r requirements.txt
 ```
-
-## Utilisation
-
-Vous devez au minimum :
-
-1. Modifier les pages (fichiers) Markdown dans le dossier `docs/`
-2. Compléter les sections prévues (ex: description, suivi, résumé, rapport)
-3. Adapter le contenu à votre projet
-
-### Travailler en local (sur votre poste)
-
-Pour lancer un serveur local avec rechargement automatique :
-
+ 
+Lancez ensuite le serveur MkDocs local :
+ 
 ```bash
 mkdocs serve --livereload
 ```
-
-Le site sera accessible à l'adresse [http://127.0.0.1:8000](http://127.0.0.1:8000).
-
-> Après chaque modification de fichiers dans `/docs`, le site local est automatiquement mis à jour.
-
-### Construction du site (optionnel)
-
+ 
+Le site sera accessible à l'adresse :
+ 
+```
+http://127.0.0.1:8000
+```
+ 
+## Déploiement
+ 
 Pour générer la version statique du site :
-
+ 
 ```bash
 mkdocs build
 ```
-
-Les fichiers générés seront placés dans le dossier `site/`.
-
-### Déployer ou mettre à jour le site (public)
-
-Pour déployer le site sur GitHub Pages :
-
+ 
+Pour déployer ou mettre à jour le site sur GitHub Pages :
+ 
 ```bash
 mkdocs gh-deploy
 ```
-
-> Cette commande pousse automatiquement le contenu du site sur la branche `gh-pages`.
-
-## Structure du projet
-
-```sh
-.
-├── docs/                # Contenu du site (Markdown)
-│   ├── index.md         # Vue d’ensemble du projet
-│   ├── suivi.md         # Suivi détaillé (hebdo / bi-hebdo)
-│   ├── analyse.md       # Analyses, recherches et explorations
-│   ├── realisation.md   # Réalisation (conception + implementation)
-│   └── evaluation.md    # Validation, résultats et analyse critique
-├── mkdocs.yml           # Configuration du site et navigation
-├── requirements.txt     # Dépendances Python
-└── site/                # Site généré (créé lors de la construction)
+ 
+## Structure du dépôt
+ 
 ```
-
-> Tout le contenu du projet se trouve dans `docs/`.
-
-## Personnalisation
-
-1. Modifiez `mkdocs.yml` pour changer la configuration du site
-2. Ajoutez/modifiez les fichiers Markdown (`.md`) dans `docs/`
-3. Personnalisez le thème en modifiant les paramètres dans `mkdocs.yml`
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 🙋‍♀️ Questions ou problèmes ?
-
-En cas de problème, n'hésitez pas à ouvrir une issue sur GitHub ou à poser des questions au coordonnateur du cours.
+.
+├── docs/
+│   ├── index.md
+│   ├── suivi.md
+│   ├── realisation.md
+│   ├── validation.md
+│   └── ...
+├── mkdocs.yml
+├── requirements.txt
+└── README.md
+```
+ 
+Le contenu principal du site se trouve dans le dossier `docs/`.
+ 
+## Contexte académique
+ 
+Projet réalisé durant la session d'été 2026 dans le cadre du cours IFT3150 – Projet informatique du Département d'informatique et de recherche opérationnelle (DIRO) de l'Université de Montréal, en collaboration avec **BPA** et sous la supervision de **Louis-Edouard Lafontant**.
